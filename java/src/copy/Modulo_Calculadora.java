@@ -1,4 +1,4 @@
-package Kalcukids.copy;
+package copy;
 
 import java.awt.*;
 import java.awt.event.*;
