@@ -2,9 +2,10 @@ package evaluacion2;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
-public class ArrayListEnterosMenuOrdenado {
+public class ArrayListEnterosMenuInverso {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -91,9 +92,9 @@ public class ArrayListEnterosMenuOrdenado {
 				}
 
 				case 4: {  // ...
-					// Para ordenar un ArrayList de menor a mayor podemos usar el método sort
-					// de la clase Collections.
-					Collections.sort(arrayListString);
+					// Para ordenar de mayor a menor un ArrayList de nombre arrayListString escribimos
+					Comparator<Integer> comparador = Collections.reverseOrder();
+					Collections.sort(arrayListString, comparador);
 						
 					// SALIDA DEL DICCIONARIO ORDENADO
 					for (int posicion=0; posicion < arrayListString.size(); posicion++) {
